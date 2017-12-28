@@ -1,0 +1,144 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <title>Sendit FrontEnd Test</title>
+  <meta name="author" content="Sittipong HAUS">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,500|Slabo+13px" rel="stylesheet">
+  <link rel="stylesheet" href="/default.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+<div id="container">
+  <div id="intro">
+    <div class="content">
+      <img src="./logo@2x.png" alt="Sendit" height="30" />
+      <h1>Front End Developer Challenge</h1>
+    </div>
+  </div>
+  <div id="content">
+    <div class="content">
+      <h2>Introduction</h2>
+      <p>The purpose of this document is to outline the various tests that are to be performed by candidates for the Front End Developer role.</p>
+      <p>In each scenario, the candidate is asked to design and develop a “live” navigable prototype (HTML / CSS / JavaScript) based on the requirements given. The candidate has to build the app using the framework that shows on your JD and is being given full creative license with regards to design elements and controls.</p>
+      <p>The candidate has to select one of the tests below and build the application using these mock up API server.</p>
+      <ul>
+        <li>https://github.sendit.asia/frontend-test/api/success.json</li>
+        <li>https://github.sendit.asia/frontend-test/api/error.json</li>
+      </ul>
+      <p>When completed, the candidate has to <b>upload source code to GitHub</b> and <b>share repository URL with the live URL</b> reply back to Sendit team.</p>
+      <p><b>Jump to <a href="#test1">Test 1</a>, <a href="#test2">Test 2</a></b></p>
+      <div class="seperator"></div>
+      <a name="test1"></a>
+      <h2>Test 1: Online Bank Account</h2>
+      <h4 class="subtitle">Brief</h4>
+      <p>The objective of this screen is for the user to quickly and easily apply for a bank account online.  The overall process should take less than 5 minutes and the requirements are as follows:</p>
+      <h4 class="subtitle">Requirements</h4>
+      <ul>
+        <li>Users should be able to complete their application on PCs, tablets and mobiles</li>
+        <li>Users should be able to save their application and return to it when necessary</li>
+        <li>Users should know where they are in the overall application process</li>
+        <li>Users should accept terms and conditions before starting the process</li>
+        <li>Users should input the following information:
+          <ul class="unstyled">
+            <li>
+              <h4>Personal Information</h4>
+              <ul>
+                <li>First Name</li>
+                <li>Middle Name</li>
+                <li>Last Name</li>
+                <li>Home Phone (including country code)</li>
+                <li>Mobile Phone (including country code)</li>
+                <li>Email address</li>
+                <li>Mailing Address</li>
+                <li>Social Security Number</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Employment Information</h4>
+              <ul>
+                <li>Employers Name</li>
+                <li>Employers Address</li>
+                <li>Work Phone (including country code)</li>
+                <li>Job Position</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Account Information</h4>
+              <ul>
+                <li>Account Type (Savings or Deposit) – user must choose</li>
+                <li>Purpose of bank account</li>
+                <li>Where will the money come from?</li>
+                <li>How did you hear about us?</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Documentation</h4>
+              <ul>
+                <li>User uploads copy of utility bill</li>
+                <li>User upload copy of social security number</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p><b>On submitting application the applicant should be informed immediately whether they have been accepted or rejected</b></p>
+      <p><b>If the application has been accepted then the user should be presented with their account number</b></p>
+      <p><b>If the application has been rejected then the user should be presented with a phone number to contact their local branch and an application number</b></p>
+
+      <div class="seperator"></div>
+      <a name="test2"></a>
+      <h2>Test 2: Bulk Information Insert</h2>
+      <h4 class="subtitle">Brief</h4>
+      <p>The purpose of this screen is to allow users to enter in large amounts of information in bulk.  Users will receive many invoice documents and will be asked to manually enter some of the information found on the documents into the system.  The prototype should have two components, a single screen where the user enters information and a second screen where a user can approve the invoices that have been entered.  The requirements are as follows:</p>
+      <h4 class="subtitle">Requirements</h4>
+      <p>Users should enter in the following information per invoice:</p>
+      <ul>
+        <li>Invoice number</li>
+        <li>Invoice date</li>
+        <li>Invoice amount</li>
+        <li>Invoice due date</li>
+        <li>Customer number</li>
+        <li>Customer country</li>
+        <li>
+          Invoice line items i.e. if the invoice is for specific products then the following should be input
+          <ul>
+            <li>Item name</li>
+            <li>Item cost</li>
+          </ul>
+        </li>
+        <li>Users must upload a document for each invoice entered</li>
+        <li>Users should not be allowed to save until all information is entered for a specific invoice</li>
+        <li>Users cannot enter invoice dates in the future</li>
+        <li>Approvers should be allowed to delete invoices that have been entered</li>
+        <li>Approvers should be allowed to approve invoices one at a time and in bulk</li>
+        <li>Approvers should be allowed to reject invoices one at a time and in bulk</li>
+        <li>Approvers should be allowed to edit invoice information</li>
+        <li>Approvers should be able to search for invoices from specific customers</li>
+        <li>Approvers should be able to search for invoices that fall between given invoice amounts</li>
+        <li>Approvers should be able to search for invoices between certain due dates</li>
+        <li>Approvers should be able to search for invoices from certain countries</li>
+        <li>Approvers should be able to search for invoices containing certain products</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+  window._gaq = [['_setAccount','UA-72828936-2'],['_trackPageview'],['_trackPageLoadTime']]
+  Modernizr.load({
+    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+  })
+</script>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+</body>
+</html>
