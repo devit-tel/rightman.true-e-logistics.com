@@ -1,6 +1,11 @@
 * {
   transition: .1s;
 }
+ul.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 body {
   background: black;
   font-family: 'Slabo 13px', serif;

@@ -6,29 +6,37 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="UTF-8">
-  <title>Sendit FrontEnd Test</title>
+  <title>Rightman</title>
   <meta name="author" content="Sittipong HAUS">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,500|Slabo+13px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,500,300|Slabo+13px" rel="stylesheet">
   <link rel="stylesheet" href="./default.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <style type="text/css">
-    div{color: white;text-align: center;display: flex;width: 100%;height: 100%;justify-content: center;align-items: center;position: fixed;flex-direction: column;}
+    #recruitment{color: white;text-align: center;display: flex;width: 100%; height: 100%; justify-content: center;align-items: center;position: fixed;flex-direction: column; background: url(./images/rightman-bg.jpg) no-repeat center center; background-size: cover;} a{color:#f9be00;} h1{font-weight: 300; text-transform: uppercase; letter-spacing: 4px;} ul.list-unstyled li {letter-spacing: .5px;}
   </style>
 </head>
 <body>
-<div>
-<img src="./logo@2x.png" alt="Sendit" height="30" />
-<h1>Coming soon</h1>
+<div id="recruitment">
+  <img src="./logo@2x.png" alt="Sendit" height="30" />
+  <h1>Rightman</h1>
+  <ul class="list-unstyled">
+    <li><a href="./ios">iOS Developer</a></li>
+    <li><a href="./frontend">Front End Developer</a></li>
+  </ul>
 </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84477134-3"></script>
 <script>
-  window._gaq = [['_setAccount','UA-72828936-2'],['_trackPageview'],['_trackPageLoadTime']]
-  Modernizr.load({
-    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-  })
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84477134-3');
 </script>
+
 <!--[if lt IE 7 ]>
 <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
 <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
