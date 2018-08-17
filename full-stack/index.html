@@ -1,0 +1,87 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <title>Sendit FrontEnd Test</title>
+  <meta name="author" content="Sittipong HAUS">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,500|Slabo+13px" rel="stylesheet">
+  <link rel="stylesheet" href="/default.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+<div id="container">
+  <div id="intro">
+    <div class="content">
+      <img src="/logo@2x.png" alt="Sendit" height="30" />
+      <h1>Full Stack Developer Challenge</h1>
+    </div>
+  </div>
+  <div id="content">
+    <div class="content">
+      <h2>Introduction</h2>
+      <p>The purpose of this document is to outline the various tests that are to be performed by candidates for the Full Stack Developer role.</p>
+      <p>When completed, the candidate has to <b>upload source code to GitHub</b> and <b>share repository URL with the live URL</b> reply back to Sendit team.</p>
+      <div class="seperator"></div>
+      <a name="test1"></a>
+      <h2>Test: Create E-commerce Admin-Website</h2>
+      <h4 class="subtitle">Requirements</h4>
+      <ul>
+        <li>Create e-commerce admin-website</li>
+        <li>Authentication</li>
+        <li>As admin user can (view create update delete) product</li>
+        <li>Deploy to some cloud service (Heroku, Firebase, Netlify, etc)</li>
+        <li>Create Restful-API (or Graphql is plus)</li>
+        <li>Deploy to some cloud service (Heroku, etc )</li>
+        <li>Docker is plus (Dockerfile is enough)</li>
+          <ul class="unstyled">
+            <li>
+              <h4>Front-End</h4>
+              <ul>
+                <li>React is required</li>
+                <li>Styled-components is required</li>
+                <li>Mobx or Redux as State Management is required</li>
+                <li>If you using GraphQL (Apollo is plus)</li>
+                <li>Recompose is plus (not required)</li>
+                <li>UI Framework is allow such as Ant Design, Material UI, Bootstrap, etc</li>
+                <li>Responsive is plus</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Back-End</h4>
+              <ul>
+                <li>Node.js is required</li>
+                <li>Express or Koa is required</li>
+                <li>Sequelize is required</li>
+                <li>Authentication by using Passport.js is required</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p><b>We just want to know that you can work with our technology stack. So, don't be serious with this requirement. Feel free to adapt to show us your technical skill.</b></p>
+      <p><b>We will consider your coding style and project structure. So, do your best</b></p>
+</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84477134-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84477134-3');
+</script>
+
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+</body>
+</html>
